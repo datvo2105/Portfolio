@@ -1,0 +1,260 @@
+.main {
+  width: 120rem;
+  max-width: 100%;
+  margin: auto;
+  /* position: sticky;
+  position: -webkit-sticky;
+  top: 0; */
+  position: relative;
+  /* box-shadow: 0 1px 5px #000; */
+}
+
+/* Banner */
+.banner {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.banner .banner-img img {
+  width: 200px;
+}
+
+.banner-title {
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+
+.banner-title h2 {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.banner-title h1 {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* Nav-side */
+
+/* Nav Information */
+.nav-side {
+  position: fixed;
+  width: 30rem;
+  top: 6.6rem;
+  bottom: 0;
+  overflow-y: scroll;
+  background-color: #f2f3f7;
+}
+
+.nav-side .nav-infor img {
+  width: 14rem;
+  margin: 2.4rem 0;
+  border-radius: 60%;
+}
+
+.nav-side .nav-infor .infor-title {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.nav-side .nav-infor .infor-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.nav-side .nav-infor .infor-name i {
+  color: var(--light-blue);
+}
+/* Nav Menu */
+.nav-menu .menu-items {
+  line-height: 2.16rem;
+}
+
+.nav-menu .menu-items li {
+  margin: 0 0 1rem;
+}
+
+.nav-menu .menu-items a {
+  position: relative;
+  width: max-content;
+
+  padding: 10px 0;
+  color: #333;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.nav-menu .menu-items .btn-control.active::after,
+.nav-menu .menu-items a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.2rem;
+  top: 2.8rem;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transform: scale(0);
+  background-color: var(--light-blue);
+  transition: all 0.2s linear;
+}
+
+.nav-menu .menu-items a:hover:after {
+  transform: scale(1);
+}
+
+.nav-menu .menu-items .btn-control.active {
+  color: var(--light-blue);
+}
+
+.nav-menu .menu-items .btn-control.active::after {
+  transform: scale(1);
+}
+
+/* Content-side */
+.content-side {
+  position: absolute;
+  right: 0;
+  left: 30rem;
+  top: 6.6rem;
+}
+
+.content-side #home {
+  /* padding-bottom: 6rem; */
+  height: 100vh;
+  background: url(https://reviewedu.net/wp-content/uploads/2021/08/dai-hoc-cong-nghiep-thuc-pham-4_n-1.jpg)
+    top center / cover no-repeat;
+}
+
+.content-side .content-item {
+  margin: 0 3.8rem;
+}
+
+.content-side .content-item .sub-title {
+  font-size: 1rem;
+  opacity: 0.7;
+}
+
+.content-side .content-item .title {
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  margin-bottom: 5rem;
+}
+
+.content-side #about {
+  /* padding: 13rem 0 6rem; */
+  padding-top: 13rem;
+}
+
+.content-side .content-item .about-content {
+  font-size: 1.4rem;
+  font-weight: 300;
+  text-align: justify;
+}
+
+.content-side #research {
+  /* padding: 13rem 0 6rem; */
+  padding-top: 13rem;
+}
+
+.research-content .accordion-item .accordion-header {
+}
+
+.research-content .accordion-item .accordion-button {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.4rem;
+  padding: 20px 25px;
+}
+
+.research-content .accordion-item .accordion-body {
+  font-size: 1.2rem;
+}
+
+.research-content .accordion-item .accordion-body li {
+  list-style: circle;
+  line-height: 2;
+}
+
+.content-side #publications {
+  /* padding: 13rem 0 6rem; */
+  padding-top: 13rem;
+}
+
+.read-content .card {
+  border: none;
+}
+
+.read-content .card .card-img {
+  overflow: hidden;
+}
+
+.read-content .card:hover img {
+  transform: scale(1.1);
+  transition: all 0.2s linear;
+}
+
+.read-content .card .card-date {
+  opacity: 0.6;
+  font-size: 1.2rem;
+}
+
+.read-content .card .card-title {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 1.6rem;
+}
+
+.read-content .card .card-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  font-size: 1.2rem;
+  line-height: 2;
+}
+
+.content-side #publications .load-btn {
+  background-color: var(--light-blue);
+}
+
+.content-side #publications .load-btn .btn {
+  line-height: 4rem;
+  font-size: 1.4rem;
+}
+
+.content-side #projects {
+  /* padding: 13rem 0 6rem; */
+  padding-top: 13rem;
+}
+
+.projects-content .project-item {
+  height: 30rem;
+  /* background: url(https://fjwp.s3.amazonaws.com/blog/wp-content/uploads/2022/08/02083509/Companies-Hiring-for-Remote-Work-From-Home-Jobs-Right-Now-2.jpeg)
+  top center / cover no-repeat; */
+  background-color: #333;
+}
+
+.content-side #teaching {
+  /* padding: 13rem 0 6rem; */
+  padding-top: 13rem;
+}
+
+.content-side #cv {
+  /* padding: 13rem 0 6rem; */
+  padding-top: 13rem;
+}
+
+.content-side #contact {
+  /* padding: 13rem 0 6rem; */
+  padding-top: 13rem;
+}
+
+.content-side #private {
+  /* padding: 13rem 0 6rem; */
+  padding-top: 13rem;
+}

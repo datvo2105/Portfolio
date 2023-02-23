@@ -1,0 +1,36 @@
+:root {
+  --deep-blue: #1966b3;
+  --blue: #0066b3;
+  --light-blue: #2c98f0;
+}
+
+.blue {
+  color: var(--blue) !important;
+}
+
+.deep-blue {
+  color: var(--deep-blue) !important;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  color: #333;
+}
