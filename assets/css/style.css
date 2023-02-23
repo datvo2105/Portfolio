@@ -232,11 +232,30 @@
   padding-top: 13rem;
 }
 
-.projects-content .project-item {
+.projects-content .project-content {
+  background-color: bisque;
+}
+
+.projects-content .project-content:hover .project-img {
+  display: none;
+}
+
+.projects-content .project-content:hover .project-item {
+  display: block;
+  transition: all 10s linear;
+}
+
+.projects-content .project-img {
+  display: block;
   height: 30rem;
-  /* background: url(https://fjwp.s3.amazonaws.com/blog/wp-content/uploads/2022/08/02083509/Companies-Hiring-for-Remote-Work-From-Home-Jobs-Right-Now-2.jpeg)
-  top center / cover no-repeat; */
-  background-color: #333;
+  background: url(https://fjwp.s3.amazonaws.com/blog/wp-content/uploads/2022/08/02083509/Companies-Hiring-for-Remote-Work-From-Home-Jobs-Right-Now-2.jpeg)
+    top center / cover no-repeat;
+}
+
+.projects-content .project-item {
+  display: none;
+  height: 30rem;
+  background-color: var(--light-blue);
 }
 
 .content-side #teaching {
