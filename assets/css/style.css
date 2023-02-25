@@ -234,9 +234,6 @@
 .projects-content .project {
 }
 
-.projects-content .p-3 {
-}
-
 .projects-content .project-content {
   width: 100%;
   position: relative;
@@ -262,7 +259,7 @@
 .projects-content .project-modal {
   position: absolute;
   top: 0;
-  z-index: 999;
+  z-index: 9;
   opacity: 0;
   height: 30rem;
   width: inherit;
@@ -307,12 +304,58 @@
   padding-top: 13rem;
 }
 
+.teaching-content .list-group-item:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.teaching-content .list-group-item .semester {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.teaching-content .list-group-item ul {
+  margin-left: 2rem;
+}
+
+.teaching-content .list-group-item li {
+  list-style: decimal;
+  font-size: 1.4rem;
+}
+
 .content-side #cv {
   padding-top: 13rem;
 }
 
 .content-side #contact {
   padding-top: 13rem;
+}
+
+.contact-content .contact-infor {
+  font-size: 1.4rem;
+}
+
+.contact-content .contact-infor .information {
+  padding: 1rem 0;
+}
+
+.contact-content .contact-infor i {
+  padding: 5px;
+}
+
+.contact-content .contact-send .form-floating {
+  padding: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.contact-send .form-floating .btn {
+  padding: 1rem;
+  font-size: 1.4rem;
+}
+
+.contact-send .form-floating .form-control {
+  padding: 0.5rem;
+  font-size: 1.2rem;
 }
 
 .content-side #private {
