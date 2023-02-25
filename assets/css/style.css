@@ -14,7 +14,7 @@
   position: fixed;
   left: 0;
   right: 0;
-  z-index: 99;
+  z-index: 9999;
 }
 
 .banner .banner-img img {
@@ -218,62 +218,103 @@
   line-height: 2;
 }
 
-.content-side #publications .load-btn {
+.content-side .load-btn {
   background-color: var(--light-blue);
 }
 
-.content-side #publications .load-btn .btn {
+.content-side .load-btn .btn {
   line-height: 4rem;
   font-size: 1.4rem;
 }
 
 .content-side #projects {
-  /* padding: 13rem 0 6rem; */
   padding-top: 13rem;
 }
 
+.projects-content .project {
+}
+
+.projects-content .p-3 {
+}
+
 .projects-content .project-content {
-  background-color: bisque;
+  width: 100%;
+  position: relative;
+  cursor: pointer;
 }
 
 .projects-content .project-content:hover .project-img {
-  display: none;
+  opacity: 0;
 }
 
-.projects-content .project-content:hover .project-item {
-  display: block;
-  transition: all 10s linear;
+.projects-content .project-content:hover .project-modal {
+  cursor: default;
+  opacity: 1;
 }
 
 .projects-content .project-img {
-  display: block;
+  opacity: 1;
   height: 30rem;
   background: url(https://fjwp.s3.amazonaws.com/blog/wp-content/uploads/2022/08/02083509/Companies-Hiring-for-Remote-Work-From-Home-Jobs-Right-Now-2.jpeg)
     top center / cover no-repeat;
 }
 
-.projects-content .project-item {
-  display: none;
+.projects-content .project-modal {
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  opacity: 0;
   height: 30rem;
+  width: inherit;
   background-color: var(--light-blue);
+  transition: all 0.7s linear;
+}
+
+.project-modal .project-item a {
+  position: absolute;
+  font-size: 1.8rem;
+  font-weight: 500;
+  top: 2rem;
+  left: 2rem;
+}
+
+.project-modal .project-item p {
+  position: absolute;
+  font-size: 1.3rem;
+  top: 6rem;
+  left: 2rem;
+}
+
+.project-modal .project-icon {
+  position: absolute;
+  left: 2rem;
+  bottom: 4rem;
+}
+
+.project-modal .project-icon .btn {
+  background-color: #fff;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  opacity: 0.6;
+  margin-right: 1rem;
+}
+
+.project-modal .project-icon .btn span {
+  margin-left: 5px;
 }
 
 .content-side #teaching {
-  /* padding: 13rem 0 6rem; */
   padding-top: 13rem;
 }
 
 .content-side #cv {
-  /* padding: 13rem 0 6rem; */
   padding-top: 13rem;
 }
 
 .content-side #contact {
-  /* padding: 13rem 0 6rem; */
   padding-top: 13rem;
 }
 
 .content-side #private {
-  /* padding: 13rem 0 6rem; */
   padding-top: 13rem;
 }
